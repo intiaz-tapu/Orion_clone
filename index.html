@@ -13,30 +13,31 @@
 <body>
     <header>
         <nav>
-            <ul class="cont">
+            <div class="nav-container">
                 <img src="https://www.orion-group.net/_layout/images/orion_logo.jpg" class="logo">
-                <li class="icon"><a href="">HOME</a></li>
-                <li class="icon"><a href="">ABOUT US</a></li>
-                <li class="icon dropdown">
-                    <a href="#">CONCERN</a>
-                    <div class="dropdown-content">
-                        <a href="#">Pharma & healthcare</a>
-                        <a href="#">Infrastructure Development</a>
-                        <a href="#">Power</a>
-                        <a href="#">Energy</a>
-                        <a href="#">Real State</a>
-                        <a href="#">Construction & Allied</a>
-                        <a href="#">Cosmetics & Toiletries</a>
-                        <a href="#">Footwear & Footcare</a>
-                        <a href="#">IT & Gaming</a>
-                        <a href="#">Hi-Tech Agro Products</a>
-                    </div>
-                </li>
-
-                <li class="icon"><a href="">GALLERY</a></li>
-                <li class="icon"><a href="">CAREER</a></li>
-                <li class="icon"><a href="">CONTACTS</a></li>
-            </ul>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li class="icon"><a href="">HOME</a></li>
+                    <li class="icon"><a href="">ABOUT US</a></li>
+                    <li class="icon dropdown">
+                        <a href="#">CONCERN</a>
+                        <div class="dropdown-content">
+                            <a href="#">Pharma & healthcare</a>
+                            <a href="#">Real State</a>
+                            <a href="#">Cosmetics & Toiletries</a>
+                            <a href="#">Footwear & Footcare</a>
+                            <a href="#">Hi-Tech Agro Products</a>
+                        </div>
+                    </li>
+                    <li class="icon"><a href="">GALLERY</a></li>
+                    <li class="icon"><a href="">CAREER</a></li>
+                    <li class="icon"><a href="">CONTACTS</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <section>
@@ -46,65 +47,76 @@
             <div class="item item1">ORION GROUP is a leading conglomerate in Bangladesh over the years with diversified
                 business in.</div>
 
-            
+
             <a href="" class="item item2">History</a>
             <a href="" class="item item3">Future Thinking</a>
 
         </div>
     </section>
 
-    <div class="slideshow-container">
+    <div class="products-slideshow-container">
+        <div class="products-showcase" id="productsShowcase">
+            <div class="product-panel">
+                <div class="product-image">
+                    <img src="https://www.orion-group.net/assets/media/concern_logo/1425274600.jpg"
+                        alt="Hi-Tech Agro Products">
+                </div>
+                <div class="product-caption">Hi-Tech Agro Products</div>
+            </div>
 
-        <div class="image">
-            <img src="https://www.orion-group.net/assets/media/concern_logo/1425274600.jpg" alt="Image 1">
-            <div class="caption">Hi-Tech Agro Products</div>
+            <div class="product-panel">
+                <div class="product-image">
+                    <img src="https://www.orion-group.net/assets/media/concern_logo/orion-footwear-and-footcare.jpg"
+                        alt="Footwear & Footcare">
+                </div>
+                <div class="product-caption">Footwear & Footcare</div>
+            </div>
+
+            <div class="product-panel">
+                <div class="product-image">
+                    <img src="https://www.orion-group.net/assets/media/concern_logo/cosmetics-toiletries.jpg"
+                        alt="Cosmetics & Toiletries">
+                </div>
+                <div class="product-caption">Cosmetics & Toiletries</div>
+            </div>
+
+            <div class="product-panel">
+                <div class="product-image">
+                    <img src="https://www.orion-group.net/assets/media/concern_logo/textiles-garments.jpg"
+                        alt="Textiles & Garments">
+                </div>
+                <div class="product-caption">Textiles & Garments</div>
+            </div>
+
+            <div class="product-panel">
+                <div class="product-image">
+                    <img src="https://www.orion-group.net/assets/media/concern_logo/real-estate.jpg" alt="Real Estate">
+                </div>
+                <div class="product-caption">Real Estate</div>
+            </div>
+
+            <div class="product-panel">
+                <div class="product-image">
+                    <img src="https://www.orion-group.net/assets/media/concern_logo/pharma-healthcare.jpg"
+                        alt="Pharma & Healthcare">
+                </div>
+                <div class="product-caption">Pharma & Healthcare</div>
+            </div>
+
+            <div class="product-panel">
+                <div class="product-image">
+                    <img src="https://www.orion-group.net/assets/media/concern_logo/infrastructure-development.jpg"
+                        alt="Infrastructure Development">
+                </div>
+                <div class="product-caption">Infrastructure Development</div>
+            </div>
         </div>
 
-        <div class="image">
-            <img src="https://www.orion-group.net/assets/media/concern_logo/orion-footwear-and-footcare.jpg"
-                alt="Image 2">
-            <div class="caption">Footwear & Footcare</div>
+        <div class="slideshow-controls">
+            <div class="slider-track">
+                <div class="slider-thumb" id="sliderThumb"></div>
+            </div>
         </div>
-
-        <div class="image">
-            <img src="https://www.orion-group.net/assets/media/concern_logo/cosmetics-toiletries.jpg" alt="Image 3">
-            <div class="caption">Cosmetics & Toiletries</div>
-        </div>
-
-        <div class="image">
-            <img src="https://www.orion-group.net/assets/media/concern_logo/textiles-garments.jpg" alt="Image 4">
-            <div class="caption">textiles-garments</div>
-        </div>
-
-        <div class="image">
-            <img src="https://www.orion-group.net/assets/media/concern_logo/real-estate.jpg" alt="Image 5">
-            <div class="caption">Real-Estate</div>
-        </div>
-
-        <div class="image">
-            <img src="https://www.orion-group.net/assets/media/concern_logo/pharma-healthcare.jpg" alt="Image 6">
-            <div class="caption">Pharma-Healthcare</div>
-        </div>
-
-        <div class="image">
-            <img src="https://www.orion-group.net/assets/media/concern_logo/infrastructure-development.jpg"
-                alt="Image 7">
-            <div class="caption">Infrastructure-Development</div>
-        </div>
-
-
-    </div>
-
-
-    <div class="dots">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
-        <span class="dot" onclick="currentSlide(6)"></span>
-        <span class="dot" onclick="currentSlide(7)"></span>
-
     </div>
 
     <div>
