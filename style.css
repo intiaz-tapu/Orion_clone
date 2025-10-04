@@ -873,7 +873,7 @@ ul li a:hover {
   .footer {
     flex-direction: column;
     gap: 30px;
-    padding: 30px 100px;
+    padding: 30px 155px;
     height: auto;
     text-align: center;
   }
@@ -958,3 +958,4 @@ ul li a:hover {
     width: 25%;
   }
 }
+
