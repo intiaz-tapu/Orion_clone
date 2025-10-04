@@ -341,7 +341,7 @@ ul li a:hover {
     border: 2px;
     height: 250px;
     background-color: rgb(223, 226, 229);
-    gap: 180px;
+    gap: 100px;
 }
 
 .foot {
@@ -618,8 +618,8 @@ ul li a:hover {
   }
   
   .footer {
-    flex-direction: column;
-    gap: 20px;
+    /* flex-direction: column;
+    gap: 20px; */
     padding: 80px 35px;
   }
   
@@ -958,5 +958,6 @@ ul li a:hover {
     width: 25%;
   }
 }
+
 
 
